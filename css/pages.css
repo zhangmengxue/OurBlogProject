@@ -1,0 +1,563 @@
+#wrapper {
+	width: 100%;
+	height: 100%;
+	max-width: 1366px;
+	margin: 0 auto;
+}
+/*首部开始*/
+#header {
+	position: relative;
+	width: 100%;
+	height:679px;
+	background-color: #1d3137;
+}
+.pan_pic {
+	width: 1366px;
+	height: 414px;
+	text-align: center;
+	transition:width 5s,height 5s;
+	-moz-transition:width 5s,height 5s,-moz-transform 5s;/* Firefox 4 */
+	-webkit-transition:width 5s,height 5s,-webkit-transform 5s;/* Safari and Chrome */
+	-o-transition:width 5s,height 5s,-o-transform 5s;/* Opera */
+	background: #1d3137 url(../images/pan_page.png) center center no-repeat;
+}
+.panpan_pic {
+	transform:scaleX(1.1) scaleY(1.1);
+	-moz-transform:scaleX(1.1) scaleY(1.1);
+	-webkit-transform:scaleX(1.1) scaleY(1.1);
+	-o-transform:scaleX(1.1) scaleY(1.1);
+	-ms-transform:scaleX(1.1) scaleY(1.1);
+	background: #1d3137 url(../images/pan_page.png) center center no-repeat;
+}
+
+.nav a.home {
+    display: block;
+    position: absolute;
+    width: 63px;
+    height: 72px;
+    top: 30px;
+    left: 20px;
+    z-index: 2;
+    background: url(../images/home.png) center center no-repeat;
+
+}
+.nav a.more {
+	display: block;
+	position: absolute;
+	width: 63px;
+	height: 72px;
+	top: 100px;
+	left: 28px;
+	z-index: 2;
+	background:url(../images/more.png) center center no-repeat;
+}
+.nav ul {
+   display: block;
+   position: absolute;
+   top: 180px;
+   left: 40px;
+   width: 100px;
+   /*nav动画*/
+   max-height: 0px;   
+   overflow: hidden;
+   z-index: 5;
+   transition:max-height 0.4s linear;
+   -webkit-transition:max-height 0.4s linear;
+   -moz-transition:max-height 0.4s linear;
+}
+.nav:hover ul{
+   max-height: 185px;
+   
+}
+.nav ul li {
+   display: block;
+   width: 80px;
+   height: 55px;
+   font-family: 'bebas_neueregular';
+   font-size: 20px;
+   font-weight: 4px;
+}
+.nav_ul .dot-1,.dot-2,.dot-3,.dot-4 {
+	display: block;
+	position: absolute;
+	float: left;
+	width: 60px;
+	height: 50px;
+	z-index: 2;
+    background: url(../images/dot.png) center center no-repeat;
+}
+.nav_ul {
+	background: url(../images/dot_line.png) repeat-y;
+}
+.dot-1{
+	top: -19px;
+	left: -27px;
+}
+.dot-2{
+	top: 40px;
+	left:-27px;
+}
+.dot-3{
+	top: 90px;
+	left:-27px;
+}
+.dot-4{
+	top: 150px;
+	left:-27px;
+}
+.nav_ul a{
+	display: block;
+	margin-left: 20px;
+	font-weight: bold;
+	color: #ffffff;
+    text-decoration: none;
+}
+.page_line {
+	top:26px;
+	height: 10px;
+	width: 100%; 
+	position: relative;
+	background: url(../images/page_line.png) repeat-x;
+}
+.pan_page_pic{
+	position: absolute;
+	left: 50%;
+	top: 385px;
+    margin-left: -65px;
+	width: 135px;
+	height: 125px;
+	transition:width 1s,height 1s;
+	-moz-transition:width 1s,height 1s,-moz-transform 1s;/* Firefox 4 */
+	-webkit-transition:width 1s,height 1s,-webkit-transform 1s;/* Safari and Chrome */
+	-o-transition:width 1s,height 1s,-o-transform 1s;/* Opera */
+	background: url(../images/pan_page_pic.png) center center no-repeat;
+}
+.pan_page_pic:hover{
+	position: absolute;
+	left: 50%;
+	top: 385px;
+    margin-left: -65px;
+	width: 135px;
+	height: 125px;
+	transform:rotate(720deg);
+	-moz-transform:rotate(720deg);/* Firefox 4 */
+	-webkit-transform:rotate(720deg);/* Safari and Chrome */
+	-o-transform:rotate(720deg);/* Opera */
+	background: url(../images/pan_page_pic.png) center center no-repeat;
+}
+.intr_word {
+	margin-top: 100px;
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	text-shadow:0 1px 0 #000000;
+}
+/*首部结束*/
+/*ability部分开始*/
+#ability {
+	width: 100%;
+	height: 360px;
+	margin-top: -40px;
+	background-color: #dde0e2;
+}
+#ability .a_fish {
+	position: absolute;
+	width: 56px;
+	height: 25px;
+	margin-top: -21px;
+	margin-left: 240px;
+	background:url(../images/a_fish.png) no-repeat;
+}
+#ability .a_head {
+	position: absolute;
+	width: 131px;
+	height: 52px;
+	margin-top: 0px;
+	margin-left: 300px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	background-color: #dde0e2;
+}
+.a_head .yuan {
+	width: 25px;
+	height: 25px;
+	margin-left: 55px;
+	margin-top: 10px;
+	border-top-left-radius:50%;
+	border-top-right-radius:50%;
+	border-bottom-left-radius:50%;
+	border-bottom-right-radius:50%;
+	background-color:#1d3137; 
+}
+.a_head span {
+	display: block;
+	position: absolute;
+	top: 12px;
+	left: 12px;
+	color: #1d3137;
+	font-weight: bold;
+	font-size: 24px;
+	font-family: 'bebas_neueregular';
+} 
+.a_head span b{
+	display: inline-block;
+	width: 5px;
+	margin-left: 8px;
+	margin-right: 8px;
+	color: #ffffff;
+	font-family: 'bebas_neueregular';
+}
+#ability .left{
+	float: left;
+	width: 350px;
+	height: 180px;
+	margin-top: 70px;
+	margin-left: 190px;	
+	background: url(../images/a_fill_block.png) 110px 0px no-repeat;
+}
+#ability .left span{
+	display: block;
+	position: relative;
+	width: 50px;
+	height: 32px;
+	font-size: 13px;
+	font-family: 'bebas_neueregular';
+	font-color:#1d3137;
+}
+#ability .right {
+    float: right;
+    position: relative;
+    margin-right: 200px;
+    margin-top: 60px;
+    width: 360px;
+    height:190px;
+}
+.right .ps {
+   display: inline-block;
+   width: 85px;
+   height: 86px;
+   background: url(../images/ps.png) no-repeat;
+}
+.right .fl {
+   display: inline-block;
+   width: 85px;
+   height: 86px;
+   left: 20px;
+   top: 20px;
+   background: url(../images/fl.png) no-repeat;
+}
+.right .pr {
+   display: block;
+   width: 85px;
+   height: 86px;
+   left: 20px;
+   top: 40px;
+   background: url(../images/pr.png) no-repeat;
+}
+.right .ai {
+   display: block;
+   position: absolute;
+   width: 85px;
+   height: 86px;
+   left: 95px;
+   top: 88px;
+   background: url(../images/ai.png) no-repeat;
+}
+.right span{
+	display: block;
+	position: absolute;
+	top: 50px;
+	left: 200px;
+    font-weight: bold;
+}
+.right .board {
+	display: block;
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	left: 280px;
+	top: 45px;
+	background: url(../images/board.png) no-repeat;
+}
+/*ability部分结束*/
+/*process部分开始*/
+#process {
+	position: relative;
+	width: 100%;
+	height: 560px;
+	margin-top: -30px;
+	background-color: #98c5c9;
+}
+#process .p_head {
+	position: absolute;
+	width: 131px;
+	height: 40px;
+	margin-top: -40px;
+	margin-left: 455px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	background-color: #98c5c9;
+}
+#process .p_head span{
+	display: block;
+	position: absolute;
+	top: 9px;
+	left: 27px;
+	color: #ffffff;
+	font-family: 'bebas_neueregular';
+	font-size: 22px;
+}
+#process .p_fish{
+	position: absolute;
+	margin-top: -30px;
+	left: 600px;
+	width: 80px;
+	height: 80px;
+	background: url(../images/p_fish.png) no-repeat;
+}
+#process .pro_main {
+	position: relative;
+	width: 960px;
+	height: 500px;
+	left: 50%;
+	margin-left: -480px;
+}
+.pro_main .big_work1 {
+	display: block;
+	position: absolute;
+	width: 430px;
+	height: 300px;
+	top: 60px;
+	background: url(../images/big_work1.png) no-repeat;
+}
+.pro_main .work_intr {
+	display: block;
+	position: absolute;
+	float: right;
+	color: #ffffff;
+	top: 80px;
+	left: 478px;
+}
+#process .page_line {
+	margin-top: -136px;
+}
+#process .small_work1{
+	display: block;
+	position: absolute;
+     width: 129px;
+     height: 86px;
+     left: 230px;
+     bottom: 70px;
+     background: url(../images/small_work1.jpg) no-repeat;
+}
+#process .small_work2{
+	display: block;
+	position: absolute;
+     width: 129px;
+     height: 86px;
+     left: 420px;
+     bottom: 68px;
+     background: url(../images/small_work2.jpg) no-repeat;
+}
+/*process部分结束*/
+/*design部分开始*/
+#design{
+	position: relative;
+	width: 100%;
+	height:470px;
+	background-color: #47877d; 
+	margin-top: -40px;
+}
+#design .d_head{
+  position: absolute;
+  width: 131px;
+  height: 40px;
+  margin-top: -40px;
+  left: 680px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #47877d;
+}
+#design .d_head span{
+	display: block;
+	position: absolute;
+	color: #ffffff;
+	left: 26px;
+	top: 12px;
+	font-family: 'bebas_neueregular';
+	font-size: 22px;
+}
+#design .d_fish{
+	position: absolute;
+	width: 58px;
+	height: 49px;
+    left: 850px;
+    margin-top: -32px;
+	background: url(../images/d_fish.png) no-repeat;
+}
+#design .des_main{
+	position: absolute;
+	width: 800px;
+	height: 400px;
+	left: 50%;
+	top: 50px;
+	margin-left: -400px;
+	font-family: 'bebas_neueregular';
+	font-size: 16px;
+}
+.des_main .block_1,.block_2,.block_3,.block_4,.block_5,.block_6{
+	display: inline-block;
+	font-size: 12px;
+    width: 200px;
+    height: 165px;
+    padding-left: 60px;
+}
+.block_1 span{
+	display: block;
+	margin-left: 22px;
+}
+.block_2 span{
+	display: block;
+	margin-left: 26px;
+}
+.block_3 span{
+	display: block;
+	margin-left: 26px;
+}
+.block_4 span{
+	display: block;
+	margin-left: 26px;
+}
+.block_5 span{
+	display: block;
+	margin-left: 26px;
+}
+.block_6 span{
+	display: block;
+	margin-left: 26px;
+}
+.img_1{
+	width: 101px;
+	height: 101px;
+	box-shadow: 0 0 30px #000000;
+	-ms-box-shadow:0 0 30px #000000;
+	-moz-box-shadow:0 0 30px #000000;
+	-webkit-box-shadow:0 0 30px #000000;
+	background: url(../images/block_1.png) no-repeat;
+}
+.img_2{
+	width: 101px;
+	height: 101px;
+	box-shadow: 0 0 30px #000000;
+	-ms-box-shadow:0 0 30px #000000;
+	-moz-box-shadow:0 0 30px #000000;
+	-webkit-box-shadow:0 0 30px #000000;
+	background: url(../images/block_2.png) no-repeat;
+}
+.img_3{
+	width: 101px;
+	height: 101px;
+	box-shadow: 0 0 30px #000000;
+	-ms-box-shadow:0 0 30px #000000;
+	-moz-box-shadow:0 0 30px #000000;
+	-webkit-box-shadow:0 0 30px #000000;
+	background: url(../images/block_3.png) no-repeat;
+}
+.img_4{
+	width: 101px;
+	height: 101px;
+	box-shadow: 0 0 30px #000000;
+	-ms-box-shadow:0 0 30px #000000;
+	-moz-box-shadow:0 0 30px #000000;
+	-webkit-box-shadow:0 0 30px #000000;
+	background: url(../images/block_4.png) no-repeat;
+}
+.img_5{
+	width: 101px;
+	height: 101px;
+	box-shadow: 0 0 30px #000000;
+	-ms-box-shadow:0 0 30px #000000;
+	-moz-box-shadow:0 0 30px #000000;
+	-webkit-box-shadow:0 0 30px #000000;
+	background: url(../images/block_5.png) no-repeat;
+}
+.img_6{
+	width: 101px;
+	height: 101px;
+	box-shadow: 0 0 30px #000000;
+	-ms-box-shadow:0 0 30px #000000;
+	-moz-box-shadow:0 0 30px #000000;
+	-webkit-box-shadow:0 0 30px #000000;
+	background: url(../images/block_6.png) no-repeat;
+}
+
+/*design部分结束*/
+/*photo部分开始*/
+#photo{
+	position: relative;
+	width: 100%;
+	height: 740px;
+	background:#384c48 url('../images/photo.png') center 2px no-repeat;
+}
+#photo .t_fish{
+	position: absolute;
+	width: 69px;
+	height: 48px;
+	margin-top: -34px;
+	left: 740px;
+	background: url(../images/t_fish.png) no-repeat;
+}
+#photo .t_head{
+	position: absolute;
+	width: 161px;
+	height: 40px;
+	left: 870px;
+	margin-top: -40px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background-color: #384c48;
+}
+#photo .t_head span{
+	display: block;
+	position: absolute;
+	color: #ffffff;
+	left: 22px;
+	top: 12px;
+	font-family: 'bebas_neueregular';
+	font-size: 22px;
+}
+#photo .page_line{
+	top: 660px;
+}
+#photo .footer{
+	position: absolute;
+	bottom: 20px;
+	width: 220px;
+	left: 50%;
+	margin-left: -110px;
+}
+#photo .footer span{
+	font-size: 14px;
+	font-weight: bold;
+	color: #fff;
+	z-index: 2;
+}
+#photo .footer p{
+	display: inline;
+}
+
+
+/*photo部分结束*/
+@font-face {
+    font-family: 'bebas_neueregular';
+    src: url('../fonts/BebasNeue-webfont.eot');
+    src: url('../fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/BebasNeue-webfont.woff') format('woff'),
+         url('../fonts/BebasNeue-webfont.ttf') format('truetype'),
+         url('../fonts/BebasNeue-webfont.svg#bebas_neueregular') format('svg');
+    font-weight: 6px;
+    font-style: normal;
+
+}
+

@@ -1,0 +1,252 @@
+
+/*自定义样式start*/
+#wrapper {
+	position: relative;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	overflow: hidden;
+}
+#nav {
+	width: 100%;
+	height: 50px;
+}
+/*导航栏部分开始*/
+.menu{
+	height: 42px;
+	background: url(../images/nav-line.jpg) repeat-x 24px;
+}
+.menu li{
+	float: left;
+	width: 68px;
+	display: inline-block;
+	text-align: center;
+	line-height: 42px;
+	font-size: 22px;
+	font-weight: bold;
+	padding-left: 156px;
+}
+.menu a{
+	display: block;
+	width: 100px;
+	height: 62px;
+	transition:width 1s,height 1s;
+	-moz-transition:width 1s,height 1s,-moz-transform 1s;/* Firefox 4 */
+	-webkit-transition:width 1s,height 1s,-webkit-transform 1s;/* Safari and Chrome */
+	-o-transition:width 1s,height 1s,-o-transform 1s;/* Opera */
+    text-decoration: none;
+	color:#456c7a;
+	text-shadow:0 1px 0 hsla(0,0%,100%,0.75);
+	font-family: 'bebas_neueregular'; 
+	background: #d7dfde;	
+}
+.menu .first a{
+	color: #ffffff;
+	background: #d7dfde url(../images/nav-hover.png) no-repeat;
+}
+.menu a:hover{
+	/*background: #d7dfde url(../images/nav-hover.png) no-repeat;
+	color:#f8ced7;*/
+	width: 100px;
+	height: 62px;
+	transform:rotate(360deg);
+	-moz-transform:rotate(360deg);/* Firefox 4 */
+	-webkit-transform:rotate(360deg);/* Safari and Chrome */
+	-o-transform:rotate(360deg);/* Opera */
+	color: #ffffff;
+	background: #d7dfde url(../images/nav-hover.png) no-repeat;
+}
+/*导航栏部分结束*/
+/*top部分开始*/
+.topMain {
+	position: relative;
+	width: 466px;
+	height: 433px;
+	bottom: -62px;
+	left: 50%;
+    margin-left: -233px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    background-color: #70b8af;
+}
+.dae_pic {
+	position: absolute;
+	display: block;
+	width: 160px;
+	height: 160px;
+	left: 160px;
+	top: 10px;
+	background: url(../images/dae.png) no-repeat ;
+}
+.topMain .Ename {
+	position: absolute;
+	display: block;
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	font-family: 'robotoregular';
+	left: 190px;
+	top: 170px;
+}
+.topMain .Cname {
+	position: absolute;
+	color: #20577d;
+	font-size: 14px;
+	font-weight: bold;
+	margin-left: 220px;
+	margin-top: 192px;
+}
+.bottomDash {
+	position: absolute;
+	top: 312px;
+	width: 100%;
+	height: 20px;
+   background:url(../images/dash.png) repeat-x;
+}
+.triangleTop {
+	position: absolute;
+	top: 297px;
+	left: 20%;
+	height: 0;
+	width: 0;
+	border-width:18px;
+	border-style: solid;
+	border-color:#d7dfde #d7dfde #213d44 #d7dfde;   
+}
+.yun {
+	position: absolute;
+	top: 80px;
+	width: 100%;
+	height: 240px;
+	background: #d7dfde url(../images/yun.png) no-repeat;
+}
+/*这里给中心图片添加过度效果*/
+.dae_home {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 160px;
+	width: 160px;
+	opacity: 0;		
+	transition: left 1s ease,opacity 1s;
+	-moz-transition: left 1s ease,opacity 1s;
+	-webkit-transition:left 1s ease,opacity 1s;
+	-o-transition:left 1s ease,opacity 1s;
+    background: url(../images/dae.png) no-repeat;
+}
+.dae_pic:hover .dae_home{
+	left:200px;
+	opacity: 1;
+}
+.dae_contact {
+	width: 212px;
+	height: 224px;
+	background: #d7dfde url(../images/dae.png) no-repeat 160px 10px;
+}
+.dae_blog {
+	width: 212px;
+	height: 224px;
+	background: #d7dfde url(../images/dae.png) no-repeat 160px 10px;
+}
+.dae_code {
+	width: 212px;
+	height: 224px;
+	background: #d7dfde url(../images/dae.png) no-repeat 160px 10px;
+}
+/*图片效果结束*/
+#top {
+	width: 100%;
+	height: 334px;
+	top: 0;
+	background-color: #d7dfde;
+	overflow: hidden;
+}
+/*top部分结束*/
+/*bottom部分开始*/
+#bottom {
+	width: 100%;
+	height: 334px;
+	bottom:0;
+	background-color: #213d44;
+	overflow: hidden;
+}
+.topDash {
+	position: absolute;
+	top: 325px;
+	width: 100%;
+	height: 20px;
+    background:url(../images/dash.png) repeat-x;
+}
+.bottomMain {
+	position: relative;
+	width: 466px;
+	height: 433px;
+	top: -212px;
+	left: 50%;
+    margin-left: -233px;
+    background-color: #456c7a;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    background-color: #456c7a;
+}
+.pan_pic {
+	position: absolute;
+	display: block;
+	width: 160px;
+	height: 160px;
+	left: 165px;
+	top: 280px;
+	background: url(../images/pan.png) no-repeat;
+}
+.bottomMain .Ename {
+	position: absolute;
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	font-family: 'robotoregular';
+	margin-left: 200px;
+	margin-top: 248px;
+}
+.bottomMain .Cname {
+	position: absolute;
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-left: 220px;
+	margin-top: 228px;
+}
+.triangleBottom {
+	position: absolute;
+	top: 338px;
+	right: 20%;
+	height: 0;
+	width: 0;
+	border-width:18px;
+	border-style: solid;
+	border-color:#ffffff #213d44 #213d44 #213d44;   
+}
+.fish {
+	position: absolute;
+	top: 380px;
+	width: 100%;
+	height: 260px;
+	background: #213d44 url(../images/fish.png) no-repeat;
+}
+/*bottom部分结束*/
+@font-face {
+    font-family: 'bebas_neueregular';
+    src: url('../fonts/BebasNeue-webfont.eot');
+    src: url('../fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/BebasNeue-webfont.woff') format('woff'),
+         url('../fonts/BebasNeue-webfont.ttf') format('truetype'),
+         url('../fonts/BebasNeue-webfont.svg#bebas_neueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'robotoregular';
+    src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
